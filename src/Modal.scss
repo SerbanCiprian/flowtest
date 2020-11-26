@@ -1,0 +1,23 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    cursor: zoom-out;
+
+    &__overlay {
+        background: #0008;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        border: 5px solid white;
+    }
+}

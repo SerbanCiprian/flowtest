@@ -1,0 +1,14 @@
+.right-sidebar {
+    position: sticky;
+    top: 12px;
+
+    .sticky & {
+        top: 62px;
+    }
+
+    @media (max-width: 640px) {
+        .sticky & {
+            top: 91px;
+        }
+    }
+}

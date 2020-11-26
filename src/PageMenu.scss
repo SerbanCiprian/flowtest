@@ -1,0 +1,21 @@
+.page-menu {
+    &__link {
+        display: block;
+        padding: 8px;
+        color: #7f7f7f;
+        font-weight: 600;
+
+        &:hover,
+        &--selected {
+            background-color: #dee0e3;
+            box-shadow: -3px 0px 0px #4267b2;
+            color: #000;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        & {
+            display: flex;
+        }
+    }
+}

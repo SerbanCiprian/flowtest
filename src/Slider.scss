@@ -1,0 +1,35 @@
+.slider {
+    position: relative;
+
+    &__box {
+        overflow: hidden;
+    }
+    &__track {
+        display: flex;
+        transition: transform 0.5s;
+    }
+
+    &__left,
+    &__right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 8px;
+        z-index: 100;
+        opacity: 0;
+        transition: opacity 0.25s;
+        cursor: pointer;
+
+        i {
+            font-size: 1.4em;
+            color: white;
+        }
+    }
+    &__right {
+        left: unset;
+        right: 8px;
+    }
+    &:hover .nav-button {
+        opacity: 1;
+    }
+}

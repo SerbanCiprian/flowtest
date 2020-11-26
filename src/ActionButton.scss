@@ -1,0 +1,32 @@
+$borderColor: #ced0d4;
+$borderRadius: 3px;
+
+.action-button {
+    color: #4a4e58;
+    font-size: 12px;
+    background-color: #f6f7f9;
+    border: 1px solid $borderColor;
+    border-left: 0;
+    padding: 8px 14px;
+    font-weight: 600;
+
+    i {
+        color: #bec2c9;
+        margin-right: 2px;
+    }
+
+    &--first {
+        border-left: 1px solid $borderColor;
+        border-top-left-radius: $borderRadius;
+        border-bottom-left-radius: $borderRadius;
+    }
+    &--last {
+        border-top-right-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+    }
+    &--highlight {
+        i {
+            color: #4267b2;
+        }
+    }
+}

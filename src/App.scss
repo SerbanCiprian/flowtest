@@ -1,0 +1,44 @@
+.page {
+    &--left {
+        width: 200px;
+        flex-shrink: 0;
+    }
+    &--right {
+        flex-grow: 1;
+    }
+
+    @media (max-width: 1024px) {
+        & {
+            display: block;
+        }
+        &--left {
+            width: auto;
+        }
+    }
+}
+.content {
+    &--main {
+        width: 65%;
+        padding-right: 12px;
+    }
+    &--side {
+        width: 35%;
+    }
+    @media (max-width: 1024px) {
+        &--side {
+            width: 45%;
+        }
+    }
+    @media (max-width: 580px) {
+        & {
+            flex-direction: column-reverse;
+        }
+        &--main {
+            width: 100%;
+        }
+        &--side {
+            width: 100%;
+            margin-bottom: 12px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.write-comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f7f9;
+    padding: 8px;
+
+    &__avatar {
+        margin-top: 3px;
+        margin-right: 4px;
+    }
+    &__input {
+        background-color: white;
+        border: 1px solid #eaeaea;
+        width: 100%;
+        display: flex;
+        padding-right: 4px;
+
+        input {
+            flex-grow: 1;
+            border-radius: 2px;
+            border: 0;
+            outline: 0;
+            height: 30px;
+            padding: 0 8px;
+        }
+        i {
+            margin-top: 7px;
+            color: #bfbfbf;
+        }
+    }
+    &__button {
+        display: inline-block;
+        padding: 0 8px;
+    }
+}

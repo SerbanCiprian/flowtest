@@ -1,0 +1,14 @@
+.sidebar-box {
+    background-color: white;
+    margin-bottom: 12px;
+
+    &__title {
+        background-color: #f6f7f9;
+        padding: 10px 12px;
+        border-bottom: 1px solid #e9eaed;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #4a4e58;
+        font-size: 14px;
+    }
+}

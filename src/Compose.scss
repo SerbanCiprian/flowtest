@@ -1,0 +1,67 @@
+.compose {
+    border-radius: 3px;
+
+    &__icons {
+        background-color: #f6f7f9;
+        padding: 8px 12px;
+        border-bottom: 1px solid #e9eaed;
+
+        a {
+            margin-right: 12px;
+            color: #444;
+            font-size: 13px;
+            font-weight: 600;
+
+            &:last-child {
+                color: #365899;
+            }
+        }
+        i {
+            font-size: 10px;
+            color: white;
+            padding: 4px;
+            border: 1px solid #5c5c5c21;
+            border-radius: 4px;
+            margin-right: 8px;
+
+            &.status-icon {
+                background-color: #6b8ccf;
+            }
+            &.photo-icon {
+                background-color: #f4b177;
+            }
+        }
+    }
+    &__write {
+        padding: 16px 12px;
+        background-color: white;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 47px;
+            top: -8px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #ffffff;
+        }
+        .avatar {
+            display: flex;
+            align-items: center;
+        }
+        input {
+            width: 100%;
+            border-radius: 2px;
+            border: 0;
+            outline: 0;
+            height: 40px;
+            padding-left: 12px;
+            font-size: 15px;
+
+            &::placeholder {
+                color: #aaa;
+            }
+        }
+    }
+}
